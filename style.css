@@ -21,6 +21,12 @@ ul {
     list-style: none;
 }
 
+.none
+{
+    visibility:hidden;
+    font-size: 25px;
+}
+
 /* Header */
 
 header {
@@ -157,7 +163,7 @@ header img {
 
 .listerestaurants a {
     display: flex;
-    margin: 15px 0 30px 20px;
+    margin: 15px 0 10px 20px;
     width: 90%;
     flex-direction: column;
     background-color: #ffffff;
@@ -185,6 +191,7 @@ header img {
 }
 
 .fa-heart {
+    display: flex;
     position: relative;
     top: -40px;
     left: 300px;
@@ -195,6 +202,18 @@ header img {
     color: #9356DC;
 }
 
+.new
+{
+    display: flex;
+    position: relative;
+    width:70px;
+    top:-330px;
+    left:280px;
+    color: #008766;
+    background-color: #99e2d0;
+    z-index: 2;
+    padding:5px 0 5px 5px;
+}
 
 /* Footer */
 
