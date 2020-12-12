@@ -4,6 +4,8 @@
 
 body {
     margin: 0;
+    background-color:#f6f6f6;
+    ;
 }
 
 
@@ -89,7 +91,7 @@ header img {
     color: #7d7d7d;
 }
 
-.reservation input {
+input {
     display: flex;
     width: 50%;
     font-size: 16px;
@@ -99,14 +101,21 @@ header img {
     color: white;
     padding: 15px 0 15px 0;
     border-radius: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     background: linear-gradient(150deg, #FF79DA, #9356DC);
 }
 
 /* Fonctionnement */
 
+.fonctionnement
+{
+    background-color: white;
+    padding-bottom: 20px;
+}
+
 .fonctionnement h2 {
-    margin: 0 0 30px 20px;
+    margin: 20px 0 30px 20px;
+    padding:20px 0 10px 0;
 }
 
 .fonctionnement div {
@@ -151,7 +160,6 @@ header img {
 .listerestaurants {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
     padding: 15px 0 20px 0;
     background-color: #f6f6f6;
     border: solid 1px #f6f6f6;
@@ -183,14 +191,13 @@ header img {
 
 .listerestaurants h3 {
     margin: 15px 0 0 15px;
-
 }
 
 .listerestaurants p {
     margin: 5px 0 0 15px;
 }
 
-.fa-heart {
+.listerestaurants .fa-heart {
     display: flex;
     position: relative;
     top: -40px;
@@ -245,4 +252,101 @@ header img {
 .footer h3 {
     margin: 10px 0 0 40px;
     font-family: 'Shrikhand';
+}
+
+/* Menus Header */
+
+.fa-arrow-left
+{
+    font-size: 20px;
+    position: absolute;
+    top:25px;
+    left:20px;
+}
+
+.photorepas
+{
+    display: flex;
+    width: 100%;
+    max-height: 350px;
+}
+
+/* Le Menu */
+
+.menurepas
+{
+    position: relative;
+    top:-70px;
+    left:0px;
+    z-index: 2;
+    background-color: #f6f6f6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding:2px 0 60px 0;
+}
+
+.menurepas h1
+{
+    font-family: 'Shrikhand';
+    margin: 20px 0 0 20px;
+}
+
+.menurepas .fa-heart
+{
+    display: flex;
+    position: relative;
+    top: -30px;
+    left: 350px;
+    font-size: 20px;
+}
+
+/* Plats du Menu */
+
+.plat h2
+{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 30px 0 0 15px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    max-width: 10%;
+    box-shadow: 0px 3px 0px 0px rgba(153,226,208,1);
+}
+
+.plat a
+{
+    display: flex;
+    margin: 20px 0 20px 20px;
+    width: 90%;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.plat h3 {
+    margin: 20px 0 0 15px;
+}
+
+.plat p {
+    margin: 2px 0 0 15px;
+}
+
+.plat .prix
+{
+    display: flex;
+    position: relative;
+    bottom:20px;
+    left:315px;
+}
+
+.menurepas .commander
+{
+    margin:50px 0 0 26%;
+}
+
+.menurepas
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
