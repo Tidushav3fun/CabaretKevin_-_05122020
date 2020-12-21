@@ -1,0 +1,464 @@
+* {
+    font-family: 'Roboto';
+}
+
+
+body {
+    margin: 0;
+    background-color: #f6f6f6;
+    overflow-x: hidden;
+}
+
+
+.bold {
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+.none {
+    visibility: hidden;
+    font-size: 25px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    box-shadow: 0px 10px 78px -20px rgba(0, 0, 0, 0.75);
+}
+
+header img {
+    display: flex;
+    width: 40%;
+    margin: 20px 0 10px 30%;
+}
+
+/* Localisation */
+
+.localisation {
+    display: flex;
+    width: 100%;
+    background-color: #eaeaea;
+    margin-top: 2px;
+}
+
+.localisation p {
+    display: flex;
+    width: 50%;
+    margin-left: 35%;
+}
+
+.localisation i {
+    position: relative;
+    top: 17px;
+    left: 135px;
+}
+
+/* Reservation */
+
+.reservation {
+    display: flex;
+    background-color: #f6f6f6;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.reservation h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 30px 0 0 20%;
+    align-content: center;
+}
+
+.reservation p {
+    display: flex;
+    width: 80%;
+    margin-left: 11%;
+    color: #7d7d7d;
+    font-size: 18px;
+}
+
+input {
+    display: flex;
+    width: 50%;
+    font-size: 16px;
+    align-content: center;
+    text-align: center;
+    margin: 10px 0 0 26%;
+    border: none;
+    color: white;
+    padding: 15px 0 15px 0;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    background: linear-gradient(150deg, #FF79DA, #9356DC);
+}
+
+
+/* Fonctionnement */
+
+.fonctionnement {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.fonctionnement h2 {
+    margin: 20px 0 30px 20px;
+    padding: 20px 0 10px 0;
+}
+
+.fonctionnement div {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 0 35px 12%;
+    padding: 5px 0 0 40px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.75);
+}
+
+.fonctionnement div:hover {
+    background-color: #f5edff;
+}
+
+.fonctionnement p {
+    font-weight: bold;
+}
+
+.fonctionnement i {
+    position: relative;
+    top: 18px;
+    left: -30px;
+    color: #7e7e7e;
+}
+
+.number {
+    position: relative;
+    top: -3px;
+    left: -55px;
+    color: white;
+    background-color: #9356dc;
+    padding: 5px 10px 5px 10px;
+    border-radius: 90%;
+
+}
+
+/* Restaurants */
+
+.listerestaurants {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0 20px 0;
+    background-color: #f6f6f6;
+    border: solid 1px #f6f6f6;
+}
+
+.listerestaurants h2 {
+    margin-left: 20px;
+}
+
+.listerestaurants a {
+    display: flex;
+    margin: 15px 0 10px 20px;
+    width: 90%;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    z-index: 1;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    &:hover{
+        animation: effetzoom 2s;
+    }
+}
+
+.listerestaurants img {
+    position: relative;
+    width: 100%;
+    max-height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    clip: auto;
+    overflow: hidden;
+}
+
+.listerestaurants h3 {
+    margin: 15px 0 0 15px;
+}
+
+.listerestaurants p {
+    margin: 5px 0 0 15px;
+}
+
+.listerestaurants .fa-heart {
+    display: flex;
+    position: relative;
+    top: -40px;
+    left: 300px;
+    font-size: 30px;
+    z-index: 1000;
+
+}
+
+.fa-heart {
+    width: 30px;
+    &:hover{
+        background-color: linear-gradient(#9356DC,#FF79DA);
+    }
+}
+
+.new {
+    display: flex;
+    position: relative;
+    width: 70px;
+    top: -330px;
+    left: 280px;
+    color: #008766;
+    background-color: #99e2d0;
+    z-index: 2;
+    padding: 5px 0 5px 5px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    color: white;
+}
+
+.footer ul li a {
+    color: white;
+}
+
+.footer .fa-utensils {
+    margin-right: 10px;
+}
+
+.footer .fa-hands-helping {
+    margin-right: 4px;
+}
+
+
+.footer ul li {
+    margin-bottom: 5px;
+}
+
+
+.footer h3 {
+    margin: 10px 0 0 40px;
+    font-family: 'Shrikhand';
+}
+
+/* Menus Header */
+
+.fa-arrow-left {
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.photorepas {
+    display: flex;
+    width: 100%;
+    max-height: 350px;
+}
+
+/* Le Menu */
+
+.menurepas {
+    position: relative;
+    top: -70px;
+    left: 0px;
+    z-index: 2;
+    background-color: #f6f6f6;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    padding: 2px 0 60px 0;
+}
+
+.menurepas h1 {
+    font-family: 'Shrikhand';
+    margin: 20px 0 0 20px;
+}
+
+.menurepas .fa-heart {
+    display: flex;
+    position: relative;
+    top: -30px;
+    left: 350px;
+    font-size: 20px;
+    z-index: 5;
+}
+
+/* Plats du Menu */
+
+.plat h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 30px 0 0 15px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    max-width: 10%;
+    box-shadow: 0px 3px 0px 0px rgba(153, 226, 208, 1);
+}
+
+.plat a {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 20px 20px;
+    width: 90%;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+
+.plat h3 {
+    margin: 20px 0 0 15px;
+    text-overflow: ellipsis;
+}
+
+.plat p {
+    display: flex;
+    font-size: 14px;
+    width: 80%;
+    margin: 2px 0 0 15px;
+    text-overflow: ellipsis;
+}
+
+.plat .prix {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    left: 315px;
+}
+
+.menurepas .commander {
+    margin: 50px 0 0 26%;
+}
+
+.menurepas {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.plat1
+{
+    animation: apparition 3s;
+    &:hover{
+        animation: margin linear 2s;
+        }
+}
+
+
+.plat2
+{
+    animation: apparition 3s 0.2s;
+}
+
+.plat3
+{
+    animation: apparition 3s 0.4s;
+}
+
+.plat4
+{
+    animation: apparition 3s 0.6s;
+}
+
+/* Animation Menu */
+
+@keyframes apparition {
+    from{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+
+/* Loader */
+
+.loader {
+    border: 10px solid #f5edff;
+    border-top: 10px solid #FF79DA;
+    border-bottom: 10px solid #9356DC;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear forwards;
+    animation-iteration-count:1;
+    margin:auto;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Animation du loader */
+
+@keyframes spin{
+    0%{
+        transform: rotate(0);
+        opacity: 1;
+    }
+    99%{
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+/* Animation check */
+
+@keyframes margin {
+    from{
+        padding-right: -20px;
+    }
+    to{
+        padding-right: 300px;
+    }
+}
+
+@keyframes effetzoom {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes like{
+    0%{
+        color: #f6f6f6;
+    }
+    50%{
+        color: #FF79DA;
+    }
+
+    100%{
+        color: #9356DC;
+    }
+}
