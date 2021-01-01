@@ -130,9 +130,11 @@ header img {
   background-color: #f6f6f6;
   box-shadow: 0px 7px 10px 2px #eaeaea;
 }
-
 .fonctionnement div:hover {
   background-color: #f5edff;
+}
+.fonctionnement div:hover .fas {
+  color: #9356dc;
 }
 
 .fonctionnement p {
@@ -161,19 +163,20 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15px 0 20px 0;
+  padding: 15px 0 10px 0;
   background-color: #f6f6f6;
   border: solid 1px #f6f6f6;
 }
 
 .listerestaurants h2 {
-  margin-left: 20px;
+  display: block;
+  margin: 10px 215px 20px 0;
 }
 
 .listerestaurants .choix {
   display: flex;
-  margin: 15px 0 10px 0px;
   width: 85%;
+  padding: 0;
   flex-direction: column;
   background-color: #ffffff;
   border-radius: 20px;
@@ -196,10 +199,12 @@ header img {
 
 .listerestaurants h3 {
   margin: 15px 0 0 15px;
+  font-size: 20px;
 }
 
 .listerestaurants p {
   margin: 5px 0 0 15px;
+  font-size: 18px;
 }
 
 .jauge-remplissage {
@@ -217,7 +222,7 @@ header img {
 .new {
   display: flex;
   position: relative;
-  width: 70px;
+  width: 75px;
   top: -335px;
   left: 115px;
   color: #008766;
@@ -312,7 +317,7 @@ header img {
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 }
 .plat section:hover .check {
-  width: 30%;
+  width: 20%;
 }
 .plat section:hover .fa-check-circle {
   animation: spin 1s reverse;
@@ -342,6 +347,7 @@ header img {
 .plat .prix {
   display: flex;
   float: right;
+  font-weight: bold;
 }
 
 .check {
@@ -467,7 +473,7 @@ header img {
 .coeur {
   position: relative;
   bottom: 40px;
-  left: 280px;
+  left: 260px;
   width: 65px;
   height: 40px;
 }

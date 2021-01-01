@@ -61,7 +61,7 @@ header img {
 }
 
 .localisation i {
-margin-right: 15px;
+    margin-right: 15px;
 }
 
 /* Reservation */
@@ -72,7 +72,7 @@ margin-right: 15px;
     background-color: #f6f6f6;
     text-align: center;
     flex-direction: column;
-    margin-left:2%;
+    margin-left: 2%;
     margin-bottom: 40px;
     align-items: center;
     justify-content: center;
@@ -136,11 +136,15 @@ margin-right: 15px;
     border-radius: 20px;
     background-color: #f6f6f6;
     box-shadow: 0px 7px 10px 2px rgba(234, 234, 234, 1);
+
+    &:hover {
+        background-color: #f5edff;
+    }
+    &:hover .fas{
+        color :#9356dc;
+    }
 }
 
-.fonctionnement div:hover {
-    background-color: #f5edff;
-}
 
 .fonctionnement p {
     font-weight: bold;
@@ -170,19 +174,20 @@ margin-right: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 0 20px 0;
+    padding: 15px 0 10px 0;
     background-color: #f6f6f6;
     border: solid 1px #f6f6f6;
 }
 
 .listerestaurants h2 {
-    margin-left: 20px;
+    display: block;
+    margin: 10px 215px 20px 0;
 }
 
 .listerestaurants .choix {
     display: flex;
-    margin: 15px 0 10px 0px;
     width: 85%;
+    padding: 0;
     flex-direction: column;
     background-color: #ffffff;
     border-radius: 20px;
@@ -206,10 +211,12 @@ margin-right: 15px;
 
 .listerestaurants h3 {
     margin: 15px 0 0 15px;
+    font-size: 20px;
 }
 
 .listerestaurants p {
     margin: 5px 0 0 15px;
+    font-size: 18px;
 }
 
 .jauge-remplissage {
@@ -227,7 +234,7 @@ margin-right: 15px;
 .new {
     display: flex;
     position: relative;
-    width: 70px;
+    width: 75px;
     top: -335px;
     left: 115px;
     color: #008766;
@@ -301,8 +308,7 @@ margin-right: 15px;
     margin: 20px 0 0 30px;
 }
 
-.menurepas .coeur
-{
+.menurepas .coeur {
     margin-left: 30px;
 }
 
@@ -327,23 +333,25 @@ margin-right: 15px;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-    &:hover .check{
-        width: 30%;
+
+    &:hover .check {
+        width: 20%;
     }
-    &:hover .fa-check-circle{
+
+    &:hover .fa-check-circle {
         animation: spin 1s reverse;
     }
 }
 
-.plat .repas{
-    white-space:nowrap;
+.plat .repas {
+    white-space: nowrap;
     flex-grow: 1;
     overflow: hidden;
 }
 
 .plat h3 {
     margin: 20px 0 0 15px;
-    white-space:nowrap;
+    white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
@@ -359,6 +367,7 @@ margin-right: 15px;
 .plat .prix {
     display: flex;
     float: right;
+    font-weight: bold;
 }
 
 .check {
@@ -372,10 +381,10 @@ margin-right: 15px;
     height: 80px;
     border-radius: 0 10px 10px 0;
     transition: all 1s ease-out;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.fa-check-circle{
+.fa-check-circle {
     font-size: 30px;
 }
 
@@ -389,7 +398,7 @@ margin-right: 15px;
 }
 
 .plat1 {
-   animation: apparition 3s;
+    animation: apparition 3s;
 }
 
 
@@ -498,19 +507,20 @@ margin-right: 15px;
 
 .coeur {
     position: relative;
-    bottom:40px;
-    left:280px;
+    bottom: 40px;
+    left: 260px;
     width: 65px;
     height: 40px;
 }
 
-.coeur>.fa-heart{
+.coeur>.fa-heart {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%, -50%, 0);
     font-size: 2em;
 }
+
 .heart-fill {
     font-size: 0 !important;
     transition-duration: 1s;
@@ -524,6 +534,6 @@ margin-right: 15px;
     transform-origin: 10% 50%;
 }
 
-.coeur:hover .heart-stroke{
+.coeur:hover .heart-stroke {
     opacity: 0.2;
 }
