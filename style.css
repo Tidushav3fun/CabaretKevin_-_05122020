@@ -34,6 +34,7 @@ header {
   width: 100%;
   align-content: center;
   box-shadow: 0px 10px 78px -20px rgba(0, 0, 0, 0.75);
+  animation: apparition 2s 2s backwards;
 }
 
 header img {
@@ -48,6 +49,7 @@ header img {
   width: 100%;
   background-color: #eaeaea;
   margin-top: 2px;
+  animation: apparition 2s 2s backwards;
 }
 
 .localisation p {
@@ -73,6 +75,7 @@ header img {
   align-items: center;
   justify-content: center;
   text-align: center;
+  animation: apparition 2s 2s backwards;
 }
 
 .reservation h1 {
@@ -109,11 +112,16 @@ header img {
   background: linear-gradient(150deg, #FF79DA, #9356DC);
   box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
 }
+.bouton:hover {
+  opacity: 0.8;
+  animation: effetzoom 1s forwards;
+}
 
 /* Fonctionnement */
 .fonctionnement {
   background-color: white;
   padding-bottom: 20px;
+  animation: apparition 2s 2s backwards;
 }
 
 .fonctionnement h2 {
@@ -167,6 +175,7 @@ header img {
   padding: 15px 0 10px 0;
   background-color: #f6f6f6;
   border: solid 1px #f6f6f6;
+  animation: apparition 2s 2s backwards;
 }
 
 .listerestaurants h2 {
@@ -224,6 +233,7 @@ header img {
   display: flex;
   position: relative;
   width: 75px;
+  float: right;
   top: -335px;
   left: 115px;
   color: #008766;
@@ -238,6 +248,7 @@ header img {
   flex-direction: column;
   background-color: #353535;
   color: white;
+  animation: apparition 2s 2s backwards;
 }
 
 .footer ul li a {
@@ -408,6 +419,10 @@ header img {
   border-radius: 50px;
   margin-bottom: 10px;
   background: linear-gradient(150deg, #FF79DA, #9356DC);
+}
+.commander:hover {
+  opacity: 0.8;
+  animation: effetzoom 1s forwards;
 }
 
 /* Animation Menu */
